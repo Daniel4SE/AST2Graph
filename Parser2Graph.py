@@ -135,7 +135,7 @@ def draw_clu(G, pos, measures, measure_name):
     plt.title(measure_name)
     rcParams['figure.figsize'] = 12, 8
     rcParams['font.sans-serif'] = ['SimHei']
-    cb = plt.colorbar(nodes,ticks=range(0,len(clusters)), label='子群标签')
+    cb = plt.colorbar(nodes,ticks=range(0,len(clusters)), label='labels for sub-group')
     cb.ax.tick_params(length=0)
     cb.set_ticklabels(list(set(measures.values())))
     nodes.set_clim(-0.5, len(clusters)-0.5)
