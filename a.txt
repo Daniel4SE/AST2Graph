@@ -1,0 +1,8 @@
+public class HttpBrowser { 
+    public void test ( ) {   
+        addCookies ( httpRequest ) ;     
+        System . out . println ( httpRequest ) ;   
+        this . httpResponse = httpRequest . send ( ) ;   
+        readCookies ( httpResponse ) ;     
+    } 
+} 
